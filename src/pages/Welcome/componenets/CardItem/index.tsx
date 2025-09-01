@@ -1,5 +1,5 @@
-import {Button} from "@components/Button";
-import type {IExampleWish} from "@/interfaces/wishes.ts";
+import {Button} from "../../../../components/Button";
+import type {IExampleWish} from "../../../../interfaces/wishes.ts";
 import styles from "./styles/cardItem.module.scss";
 
 export const CardItem = ({imageSource, title, description}: IExampleWish) => {

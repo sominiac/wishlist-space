@@ -5,43 +5,37 @@ import GadgetsImage from "@assets/images/gadgets.jpg"
 import NewHomeImage from "@assets/images/newhome.jpg"
 import TipsImage from "@assets/images/tips.jpg"
 import GardenImage from "@assets/images/garden.jpg"
-import type {IExampleWish} from "@/interfaces/wishes.ts";
+import type {IExampleWish} from "../../../../interfaces/wishes.ts";
 import styles from "./styles/examples.module.scss"
 
 export const Examples = () => {
     const items: IExampleWish[] = [
         {
-            image: "",
             title: "Комната желаний на день рождения",
             description: "Персонализированный список желаний для идеального празднования дня рождения.",
             imageSource: BirthdayImage,
         },
         {
-            image: "",
             title: "Праздничные подарки для семьи",
             description: "Совместный список для координации подарков на предстоящие праздники.",
             imageSource: FamilyImage,
         },
         {
-            image: "",
             title: "Список желаний для нового дома",
             description: "Помогите обустроить новый дом, добавив нужные вещи.",
             imageSource: NewHomeImage,
         },
         {
-            image: "",
             title: "Мечты о путешествиях",
             description: "Составьте список желаемых мест и вещей для незабываемого приключения.",
             imageSource: TipsImage,
         },
         {
-            image: "",
             title: "Технологические гаджеты",
             description: "Будьте в курсе последних технологий с вашим личным списком желаний.",
             imageSource: GadgetsImage,
         },
         {
-            image: "",
             title: "Садовые принадлежности",
             description: "Подарите радость садоводства с этим специальным списком.",
             imageSource: GardenImage,

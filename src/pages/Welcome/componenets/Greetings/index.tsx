@@ -1,6 +1,6 @@
 import WelcomeImage from "@assets/images/welcome.png";
-import {Button} from "@components/Button";
-import {EButtonTheme} from "@components/Button/types";
+import {Button} from "../../../../components/Button";
+import {EButtonTheme} from "../../../../components/Button/types";
 import styles from './styles/greetings.module.scss'
 
 export const Greetings = () => {
