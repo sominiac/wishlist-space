@@ -1,0 +1,22 @@
+@use "@styles/variables.module.scss" as variables;
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__image {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__text {
+    font: {
+      family: "Borel Regular", cursive;
+      size: 25px;
+      weight: bold;
+    }
+    color: variables.$main-black;
+    line-height: 25px;
+    transform: translateY(10px);
+  }
+}

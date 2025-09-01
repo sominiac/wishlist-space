@@ -1,0 +1,53 @@
+@use "@styles/mixins.module.scss" as mixins;
+
+.cardItem {
+  border-radius: 16px;
+  box-shadow: 0 0 1px #171a1f, 0 0 2px #171a1f14;
+  padding-bottom: 66px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(0deg, #00000033 0%, #00000000 100%);
+    border-radius: 16px 16px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__image {
+    width: 100%;
+    height: 200px;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .info {
+    padding: 26px 24px;
+  }
+
+  .info__title {
+    @include mixins.heading(#171A1FFF);
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .info__description {
+    @include mixins.text(#565D6DFF);
+    font-size: 14px;
+    line-height: 20px;
+    margin: 12px 0 10px;
+    flex-grow: 3;
+  }
+
+  &__button {
+    width: calc(100% - 48px);
+    border: 1px solid #E6C6ADFF;
+    background-color: transparent;
+    color: #E6C6ADFF;
+    position: absolute;
+    left: 24px;
+    bottom: 26px;
+  }
+}

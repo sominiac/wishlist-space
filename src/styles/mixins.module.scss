@@ -1,0 +1,37 @@
+@use './variables.module.scss' as variables;
+
+@mixin title($color: variables.$main-black) {
+  font: {
+    family: "Inter Bold", sans-serif;
+    size: 48px;
+  };
+  line-height: 60px;
+  color: $color;
+}
+
+@mixin heading($color: variables.$main-black) {
+  font: {
+    family: "Inter Bold", sans-serif;
+    size: 32px;
+  };
+  line-height: 48px;
+  color: $color;
+}
+
+@mixin subheading($color: variables.$main-gray) {
+  font: {
+    family: "Inter Regular", sans-serif;
+    size: 20px;
+  };
+  line-height: 30px;
+  color: $color;
+}
+
+@mixin text($color: variables.$main-gray) {
+  font: {
+    family: "Inter Regular", sans-serif;
+    size: 18px;
+  };
+  line-height: 28px;
+  color: $color;
+}

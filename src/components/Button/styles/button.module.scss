@@ -1,0 +1,38 @@
+@use "@styles/variables.module.scss" as variables;
+
+.button {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 36px;
+  font: {
+    family: "Inter Regular", sans-serif;
+    size: 14px;
+  }
+  line-height: 22px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.buttonPrimary {
+  background-color: #e6c6adff;
+  color: #362111ff;
+
+  &:hover {
+    background-color: #d2986cff;
+  }
+
+  &:active {
+    background-color: #bf743bff;
+  }
+}
+
+.buttonSecondary {
+  background-color: variables.$main-white;
+  border: 1px solid #a4aadaff;
+  color: #a4aadaff;
+
+  &:hover {
+    background-color: #a4aadaff;
+    color: variables.$main-white;
+  }
+}

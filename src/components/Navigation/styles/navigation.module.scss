@@ -1,0 +1,17 @@
+.navigation {
+  .list {
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+
+    &__item {
+      font: {
+        family: "Inter Regular", sans-serif;
+        size: 14px;
+      }
+      line-height: 22px;
+      cursor: pointer;
+    }
+  }
+}
+
