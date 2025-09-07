@@ -9,7 +9,7 @@
     }
   ],
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "/wishlist-space/",
     "paths": {
       "@/*": [
         "src/*"
